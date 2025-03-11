@@ -1,3 +1,25 @@
+# Netflix User Behavior & Subscription Analytics
+
+## Setup
+
+### **Download**
+- vwrvw
+
+### **Importing methods**
+- rwv
+
+## Break the Database into multiple tables for efficient querying 
+- Users (User_ID, Name, Age, Country, Subscription_Type)
+- Watch_History (User_ID, Watch_Time_Hours, Favorite_Genre, Last_Login)
+- Churn_Analysis (User_ID, Predicted_Churn, LastUpdated)
+```
+SELECT c.User_ID, c.Last_Login,
+       CASE WHEN c.Last_Login < DATE_SUB(CURDATE(), INTERVAL 6 MONTH) 
+            THEN 'Churned' ELSE 'Active' END AS Churn_Status
+FROM Churn_Analysis c;
+```
+
+## MySQL Querying
 ### **General Analytical Questions**
 1. Retrieve the total number of users in the dataset.  
 2. Find the average age of users for each subscription type.  
@@ -30,6 +52,17 @@
 27. Calculate the average watch time per login session for each user.  
 28. Identify seasonal trends in last login dates (e.g., more logins in winter/summer months).  
 29. Find users who downgraded from Premium to Basic (requires tracking subscription changes).  
-30. Determine whether users with longer watch hours also have longer session gaps in logins.  
+30. Determine whether users with longer watch hours also have longer session gaps in logins.
 
-Let me know which questions you want to solve first!
+## Important Functionalities
+### **Stored Procedures & Views** 
+– Automate reporting & make querying efficient.
+
+
+
+### **Indexing & Query Optimization**
+– Speed up large dataset operations.
+
+
+
+## Charts
