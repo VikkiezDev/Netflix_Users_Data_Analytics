@@ -63,5 +63,5 @@ ignore 1 rows;
 - Churn_rate
 
 ### **Indexing & Query Optimization**
-– Speed up large dataset operations.
+- Speed up large dataset operations.
 - Indexed the country column making any country based querying faster!
