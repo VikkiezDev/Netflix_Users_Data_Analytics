@@ -1,23 +1,21 @@
 # Netflix User Behavior & Subscription Analytics
 
 ## Setup
-
-### **Download**
-- vwrvw
-
-### **Importing methods**
-- rwv
+- Download link: https://www.kaggle.com/datasets/smayanj/netflix-users-database
+## Importing methods
+```sql
+load data infile 'C:/ProgramData/MySQL/MySQL Server 8.0/Uploads/netflix_users.csv'
+into table netflix.users
+fields terminated by ','
+enclosed by '"'
+lines terminated by '\n'
+ignore 1 rows;
+```
 
 ## Break the Database into multiple tables for efficient querying 
 - Users (User_ID, Name, Age, Country, Subscription_Type)
 - Watch_History (User_ID, Watch_Time_Hours, Favorite_Genre, Last_Login)
 - Churn_Analysis (User_ID, Predicted_Churn, LastUpdated)
-```
-SELECT c.User_ID, c.Last_Login,
-       CASE WHEN c.Last_Login < DATE_SUB(CURDATE(), INTERVAL 6 MONTH) 
-            THEN 'Churned' ELSE 'Active' END AS Churn_Status
-FROM Churn_Analysis c;
-```
 
 ## MySQL Querying
 ### **General Analytical Questions**
@@ -56,13 +54,14 @@ FROM Churn_Analysis c;
 
 ## Important Functionalities
 ### **Stored Procedures & Views** 
-– Automate reporting & make querying efficient.
-
-
+- Using Stored Procedures to gain Country-wise statistics
+       - Country = France | USA | India | Canada | Mexico | Japan | Australia | Germany | Brazil | UK
+       - Total_users
+       - Average_watch_time
+       - Favorite_genre
+       - Subscription_type
+       - Churn_rate
 
 ### **Indexing & Query Optimization**
 – Speed up large dataset operations.
-
-
-
-## Charts
+- Indexed the country column making any country based querying faster!
