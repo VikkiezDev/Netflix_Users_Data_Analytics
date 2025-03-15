@@ -54,13 +54,13 @@ ignore 1 rows;
 
 ## Important Functionalities
 ### **Stored Procedures & Views** 
-- Using Stored Procedures to gain Country-wise statistics
-       - Country = France | USA | India | Canada | Mexico | Japan | Australia | Germany | Brazil | UK
-       - Total_users
-       - Average_watch_time
-       - Favorite_genre
-       - Subscription_type
-       - Churn_rate
+#### Using Stored Procedures to gain Country-wise statistics
+- Country = France | USA | India | Canada | Mexico | Japan | Australia | Germany | Brazil | UK
+- Total_users
+- Average_watch_time
+- Favorite_genre
+- Subscription_type
+- Churn_rate
 
 ### **Indexing & Query Optimization**
 – Speed up large dataset operations.
