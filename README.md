@@ -37,10 +37,10 @@ ignore 1 rows;
 
 ### **Visualizations (Power BI)**
 
-![image](Visualizations/Churn_Percentage_by_Subscription_Type.png)
-![image](Visualizations/Average_of_watch_time_in_hours_by_subscription_type_and_country.png)
-![image](Visualizations/Age_Groups_&_Favorite_Genre_Preference.png)
-![image](Visualizations/Subscription_Preference_of_Young_Users.png)
+- ![image](Visualizations/Churn_Percentage_by_Subscription_Type.png)
+- ![image](Visualizations/Average_of_watch_time_in_hours_by_subscription_type_and_country.png)
+- ![image](Visualizations/Age_Groups_&_Favorite_Genre_Preferences.png)
+- ![image](Visualizations/Subscription_Preference_Of_Young_Users.png)
 
 
 
